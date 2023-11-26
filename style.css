@@ -1,0 +1,155 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    background-color:  #00b7ff;
+    background-image: url(images.jpg);
+    background-size: cover;
+
+    
+}
+
+.wrapper {
+    margin-top: 10vh;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    color: #000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    height: fit-content;
+    border-radius: 20px;
+    backdrop-filter: blur(1000px);
+}
+h1{
+    color: #00b7ff;
+    font-style: italic;
+}
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border-style: solid;
+    color: #000;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+}
+
+
+.add-btn{
+    padding: 10px;
+    cursor:pointer;
+    background-color: #00b7ff;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+.add-btn:hover{
+    background-color: #006b96f6;
+    transition: 0.6s;
+}
+
+.item-btn{
+    background-color: transparent;
+    display:inline-block;
+    text-align: center;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.item-btn .fa-solid{
+    display: block;
+    color:  #00b7ff;
+
+}
+.item-btn span{
+    display: none;
+    
+}
+.item-btn:hover span{
+    display:block
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #00b7ff;
+    background-color: #00b7ff2a;
+    padding: 10px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+li:hover {
+    background-color: #00b7ff52;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.iconDiv{
+    flex-shrink: 0;
+}
+.iconDiv .icon-text{
+    color: #00709c;
+}
+.priority{
+    background-color: #ff000045;
+}
+.priority:hover{
+    background-color: #ff00006c;
+}
+.priority .fa-circle-exclamation{
+    color: #ff0033 ;
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+    background-color: #22d58a89;
+}
+.completed .fa-circle-check{
+    color: #008e4c;
+}
+
+.completed:hover{
+    background-color: #22d58ad1;
+}
+
+.edit-mode {
+    display: flex;
+    align-items: center;
+}
+
+.edit-mode input {
+    margin-right: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
